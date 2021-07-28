@@ -65,6 +65,7 @@ def main():
     gaussian_blur = 5
     measure_distance = 7.5
     measure_distance_tolerance = 0.8
+    speed_limit = 30
     algo = "MOG2"
     videofile = False
     upload_picture = False
@@ -276,7 +277,7 @@ def main():
         # Display colored circle if speed is above certain limit
         if letzte_messung is not None:
             cv2.putText(frame, letzte_messung, (570, 30), cv2.FONT_HERSHEY_DUPLEX, 1, (255, 255, 255), 1)
-            if letzte_messung_speed > 30:
+            if letzte_messung_speed > speed_limit:
                 cv2.circle(frame, (1180,130), 50, (0,0,200), -1)
             else:
                 cv2.circle(frame, (1180,130), 50, (0,200,0), -1)
