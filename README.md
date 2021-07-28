@@ -1,1 +1,1 @@
-# OpenCV-Speedtrap
+# OpenCV-Radarfalle
