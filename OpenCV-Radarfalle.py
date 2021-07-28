@@ -60,7 +60,7 @@ def calcSpeed(distance_m, time_s ,tolerance_m):
 def main():
     print("Starting Blitzer ...")
 
-    min_object_size = 6500 #6000
+    min_object_size = 6500
     max_object_count = 2
     gaussian_blur = 5
     measure_distance = 7.5
